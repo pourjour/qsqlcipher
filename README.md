@@ -1,6 +1,6 @@
 # Qt SQL driver plugin for SQLCipher ( for Qt 6 )
-
-This branch is for building with Qt version **6.4**.
+this is a fork for this repo: https://github.com/sjemens/qsqlcipher-qt5
+This branch is for building with Qt version **6.8**.
 To build for previous versions choose from the releases the one that
 matches the system's Qt version.
 See https://github.com/sijk/qt5-sqlcipher to build up to Qt 5.5.x
@@ -74,7 +74,8 @@ QT_DEBUG_PLUGINS=1 ./tests/qsqlcipher_test
 ## TODO
 
 Port the *.pro files to CMakeLists.txt files
-
+## CREDITS:
+https://github.com/sjemens/qsqlcipher-qt5
 ## Licenses
 
 For this plugin see [LICENSE](https://github.com/sjemens/qsqlcipher-qt5/blob/6.4/LICENSE) (**LGPLV3**)
