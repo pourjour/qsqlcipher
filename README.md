@@ -96,6 +96,13 @@ The built files will be in the `build64` directory.
 - Qt 6.8
 - Qt tools in your system PATH
 
+**Important:** After building, you need to copy the built DLL files to your Qt plugins directory:
+1. Copy `build64/qsqlcipher/debug/qsqlcipherd.dll` to `[Qt Installation Path]/plugins/sqldrivers/` for debug builds
+2. Copy `build64/qsqlcipher/release/qsqlcipher.dll` to `[Qt Installation Path]/plugins/sqldrivers/` for release builds
+
+For example, if Qt is installed in `C:\Qt\6.8.2\msvc2019_64`, you would copy the DLLs to:
+`C:\Qt\6.8.2\msvc2019_64\plugins\sqldrivers\`
+
 ## TODO
 
 Port the *.pro files to CMakeLists.txt files
