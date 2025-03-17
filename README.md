@@ -71,6 +71,31 @@ and check the loaded library path.
 QT_DEBUG_PLUGINS=1 ./tests/qsqlcipher_test
 ```
 
+## Build instructions for Windows using batch file
+
+For Windows users, there's a convenient batch file to build both debug and release versions:
+
+```batch
+# Make sure you have Visual Studio 2022 installed
+# The batch file assumes Qt is installed and available in PATH
+# Run the batch file from the project root directory
+build.bat
+```
+
+The batch file will:
+1. Set up the Visual Studio environment for x64
+2. Clean and create a new build directory
+3. Build libtomcrypt dependency
+4. Configure the project using qmake
+5. Build the project
+
+The built files will be in the `build64` directory.
+
+**Note:** Make sure you have the following prerequisites installed:
+- Visual Studio 2022 (Community edition or higher)
+- Qt 6.8
+- Qt tools in your system PATH
+
 ## TODO
 
 Port the *.pro files to CMakeLists.txt files
